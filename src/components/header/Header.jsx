@@ -1,4 +1,4 @@
-import Logo from "@/assets/css/img/Euphoria.svg"
+import Logo from "@/assets/images/Euphoria.svg"
 import Menu from "@/components/header/Menu.jsx"
 import Search from "@/components/header/Search.jsx"
 import Panel from "@/components/header/Panel.jsx"

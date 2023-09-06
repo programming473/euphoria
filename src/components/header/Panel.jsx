@@ -4,15 +4,15 @@ import { IconButton } from "@material-tailwind/react";
 
 const Panel = () => {
     return (
-        <div className="flex gap-3">
-            <IconButton className="bg-[#F6F6F6] p-3">
-                <AiOutlineHeart className="w-5 h-5"/>
+        <div className="flex gap-3 ">
+            <IconButton className="bg-[#F6F6F6] p-6 flex items-center justify-center">
+                <AiOutlineHeart className=" w-5 h-5 text-[#807D7E]"/>
             </IconButton>
-            <IconButton className="bg-[#F6F6F6] p-3">
-                <AiOutlineUser className="w-5 h-5"/>
+            <IconButton className="bg-[#F6F6F6] p-6 flex items-center justify-center">
+                <AiOutlineUser className="w-5 h-5 text-[#807D7E]"/>
             </IconButton>
-            <IconButton className="bg-[#F6F6F6] p-3">
-                <AiOutlineShoppingCart className="w-5 h-5"/>
+            <IconButton className="bg-[#F6F6F6] p-6 flex items-center justify-center">
+                <AiOutlineShoppingCart className="w-5 h-5 text-[#807D7E]"/>
             </IconButton>
         </div>
     )
