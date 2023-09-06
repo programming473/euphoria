@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* slider bullets styles (hidden html elements) */
+
+.mySwiper .swiper-pagination-bullet {
+    width: 50px;
+    border-radius: initial ;
+    -webkit-border-radius: initial ;
+    -moz-border-radius: initial ;
+    -ms-border-radius: initial ;
+    -o-border-radius: initial ;
+    background-color: white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+.mySwiper .swiper-pagination-bullet:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mySwiper .swiper-pagination-bullet:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+}
