@@ -1,6 +1,7 @@
 import Header from "../components/header/Header.jsx";
 import MainSlider from "../components/mainPage/MainSlider";
 import ItemsSlider from "../components/mainPage/ItemsSlider";
+import ItemsList from "../components/mainPage/ItemsList.jsx";
 
 const itemsCategories = [
   {
@@ -51,16 +52,32 @@ const itemsCategories = [
     img: "https://i.ibb.co/1snqZfn/Rectangle-28-1.png",
     link: "#",
   },
+  {
+    id: 9,
+    title: "Formal Suits",
+    img: "https://i.ibb.co/1snqZfn/Rectangle-28-1.png",
+    link: "#",
+  },
+  {
+    id: 10,
+    title: "Formal Suits",
+    img: "https://i.ibb.co/1snqZfn/Rectangle-28-1.png",
+    link: "#",
+  },
 ];
+const categoriesForMan = itemsCategories.slice(0, 8);
+const categoriesForWoman = itemsCategories.slice(0, 4);
 
 const Main = () => {
   return (
     <div>
       <div className="max-w-[1230px] m-auto">
-        <Header />
+        <Header/>
       </div>
       <MainSlider />
       <ItemsSlider itemsType="New Arrival" itemsCategories={itemsCategories} />
+      <ItemsList itemsCategories={categoriesForMan} itemsType="Categories For Man" />
+      <ItemsList itemsCategories={categoriesForWoman} itemsType="Categories For Woman" />
     </div>
   );
 };
