@@ -1,8 +1,6 @@
-const Discounts = () => {
+const Discounts = (props) => {
     return (
-       <div className="p-[66px_0_0_28px] bg-[]">
-            111
-       </div>
+         <div className="flex gap-[30px]">{props.children}</div>
     )
 }
 
