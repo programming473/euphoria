@@ -2,6 +2,9 @@ import Header from "../components/header/Header.jsx";
 import MainSlider from "../components/mainPage/MainSlider";
 import ItemsSlider from "../components/mainPage/ItemsSlider";
 import ItemsList from "../components/mainPage/ItemsList.jsx";
+import Discounts from "../components/discounts/discounts.jsx";
+import { bannersData } from "@/data/banners/banners";
+import DiscountsItem from "@/components/discounts/DiscountsItem.jsx";
 
 const itemsCategories = [
   {
@@ -75,6 +78,11 @@ const Main = () => {
         <Header/>
       </div>
       <MainSlider />
+      <div className="max-w-[1230px] m-auto">
+          <Discounts >
+            {bannersData.map(el => <DiscountsItem item={el} key={`Banner_${el.id}`}/>)}
+          </Discounts>
+      </div>
       <ItemsSlider itemsType="New Arrival" itemsCategories={itemsCategories} />
       <ItemsList itemsCategories={categoriesForMan} itemsType="Categories For Man" />
       <ItemsList itemsCategories={categoriesForWoman} itemsType="Categories For Woman" />
