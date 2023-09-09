@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ItemsList = ({ itemsCategories, itemsType }) => {
   return (
-    <div className="max-w-[1230px] mx-auto my-[100px]">
+    <div className="my-[100px]">
       <Title itemsType={itemsType} marginBottom="70px" />
       <div className="flex flex-row flex-wrap gap-[50px] basis-3/12">
         {itemsCategories.map((item) => {
