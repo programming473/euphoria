@@ -9,7 +9,7 @@ import Title from "./Title";
 
 const itemsSlider = ({ itemsType, itemsCategories }) => {
   return (
-    <div className=" mini-slider max-w-[1230px]  m-auto mb-[100px] mt-[100px] ">
+    <div className=" mini-slider mb-[100px] mt-[100px] ">
       <Title itemsType={itemsType} />
       <Swiper
         className="max-w-[1230px] m-auto "
