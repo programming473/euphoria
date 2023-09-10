@@ -8,6 +8,7 @@ import DiscountsItem from "@/components/discounts/DiscountsItem.jsx";
 import category from "@/data/product/product"
 import DiscountsTotalBlock from "@/components/discounts/DiscountsTotalBlock.jsx"
 import bannersTotalBlock from "@/data/banners/TotalBlockBanners"
+import Footer from "../components/footer/Footer.jsx";
 
 const Main = () => {
   return (
@@ -25,6 +26,8 @@ const Main = () => {
           <ItemsList itemsCategories={category.categories.filter(item => item.gender)} />
           <ItemsList itemsCategories={category.categories.filter(item => !item.gender)}/>
       </div>
+       <Footer/>
+      
     </div>
   );
 };
