@@ -8,6 +8,7 @@ import DiscountsItem from "@/components/discounts/DiscountsItem.jsx";
 import category from "@/data/product/product"
 import DiscountsTotalBlock from "@/components/discounts/DiscountsTotalBlock.jsx"
 import bannersTotalBlock from "@/data/banners/TotalBlockBanners"
+import Footer from "../components/footer/Footer.jsx";
 
 const categoriesForMan = category.categories.slice(0, 8);
 const categoriesForWoman = category.categories.slice(0, 4);
@@ -28,8 +29,7 @@ const Main = () => {
           <ItemsList itemsCategories={categoriesForMan} itemsType="Categories For Man" />
           <ItemsList itemsCategories={categoriesForWoman} itemsType="Categories For Woman" />
       </div>
-      
-     
+       <Footer/>
       
     </div>
   );
