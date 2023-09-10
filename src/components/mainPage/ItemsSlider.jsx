@@ -1,6 +1,6 @@
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../../../index.css";
+import "/index.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -10,9 +10,8 @@ import Title from "./Title";
 const itemsSlider = ({ itemsType, itemsCategories }) => {
   return (
     <div className=" mini-slider mb-[100px] mt-[100px] ">
-      <Title itemsType={itemsType} />
+      <Title title={itemsType} />
       <Swiper
-        className="max-w-[1230px] m-auto "
         freeMode={true}
         autoplay={{
           delay: 5000,

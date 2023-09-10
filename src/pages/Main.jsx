@@ -9,9 +9,6 @@ import category from "@/data/product/product"
 import DiscountsTotalBlock from "@/components/discounts/DiscountsTotalBlock.jsx"
 import bannersTotalBlock from "@/data/banners/TotalBlockBanners"
 
-const categoriesForMan = category.categories.slice(0, 8);
-const categoriesForWoman = category.categories.slice(0, 4);
-
 const Main = () => {
   return (
     <div>
@@ -25,12 +22,9 @@ const Main = () => {
           </Discounts>
           <ItemsSlider itemsType="New Arrival" itemsCategories={category.categories} />
           <DiscountsTotalBlock bannersTotalBlock={bannersTotalBlock.totalBlockBanner}/>
-          <ItemsList itemsCategories={categoriesForMan} itemsType="Categories For Man" />
-          <ItemsList itemsCategories={categoriesForWoman} itemsType="Categories For Woman" />
+          <ItemsList itemsCategories={category.categories.filter(item => item.gender)} />
+          <ItemsList itemsCategories={category.categories.filter(item => !item.gender)}/>
       </div>
-      
-     
-      
     </div>
   );
 };
