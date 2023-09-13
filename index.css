@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.causten-font {
+  font-family: 'Causten', Helvetica, Arial, sans-serif;
+
+}
+
 /* slider bullets styles (hidden html elements) */
 .mySwiper .swiper-pagination-bullet {
   width: 50px;
@@ -117,3 +122,16 @@ h2::before{
   height:30px;
   background:#8A33FD;
 }
+
+
+           /* active link in header menu */
+.active-link {
+  color:#3c4242; 
+  font-weight: 700;
+}
+
+            /* main page 50% off cards */
+.shadow-50off {
+  box-shadow: 0px 0px 17px -11px rgba(0,0,0,0.7);
+}
+

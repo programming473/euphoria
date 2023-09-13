@@ -70,3 +70,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Causten';
+    src: url('../fonts/Core/Causten-Regular.ttf ') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

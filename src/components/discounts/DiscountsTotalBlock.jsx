@@ -1,10 +1,13 @@
 import {getImageUrl} from '@/utils/dynamicUrlImage.js'
 import classNames from 'classnames';
 import { AiOutlineArrowDown } from "react-icons/ai";
+import Title from '../mainPage/Title';
 
 const Discounts = (props) => {
     return (
-        <div className="container m-auto grid gap-[20px] grid-cols-12">
+        <>
+                <Title title="Big Saving Zone"/>
+                <div className="container m-auto grid gap-[20px] grid-cols-12">
          {props.bannersTotalBlock.map((el,index) => <div key={`TotalBlock_${index}`} className={classNames(
             'relative',
             {'col-span-4': el.position <= 3},
@@ -20,7 +23,7 @@ const Discounts = (props) => {
                 <div className='text-sm font-bold'>{el.title}</div>
                 <div className='text-lg font-semibold'>{el.discount}</div>
                 <div className='animate-bounce m-[30px_0_40px_45px]'><AiOutlineArrowDown className='w-[33px] h-[30px]' /></div>
-                <div className={classNames('p-[10px_15px] text-center font-medium text-xs w-[110px] rounded uppercase border-2',
+                <div className={classNames('p-[10px_15px] text-center  font-medium text-xs w-[110px] rounded uppercase border-2',
                     {'border-[#3C4242]': el.position >= 3}
                 )}>
                     <a href="#">shop now</a>
@@ -28,7 +31,10 @@ const Discounts = (props) => {
             </div>
        
          </div>)}
-      </div>
+        </div>
+        
+        </>
+        
     )
 }
 

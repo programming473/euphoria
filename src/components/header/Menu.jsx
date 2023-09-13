@@ -1,15 +1,19 @@
+import { NavLink } from "react-router-dom";
+
 const Menu = () => {
-    return (
-        <nav>
-            <div className="flex gap-10 text-[22px] text-[#807D7E] font-medium">
-                <a href="">Shop</a>
-                <a href="">Men</a>
-                <a href="">Women</a>
-                <a href="">Combos</a>
-                <a href="">Joggers</a>
-            </div>
-        </nav>
-    )
-}
+  return (
+    <nav>
+      <div className="flex gap-10 text-[22px] causten-font text-[#807D7E]  font-medium">
+        <NavLink to="/" exact  className="active-link">
+          Shop
+        </NavLink>
+        <NavLink to="/man">Men</NavLink>
+        <NavLink to="/women">Women</NavLink>
+        <NavLink to="/combos">Combos</NavLink>
+        <NavLink to="/joggers">Joggers</NavLink>
+      </div>
+    </nav>
+  );
+};
 
 export default Menu;

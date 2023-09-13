@@ -24,6 +24,12 @@ const itemsSlider = ({ itemsType, itemsCategories }) => {
         centeredSlides={false}
         spaceBetween={-32}
         navigation={true}
+        className="mt-[-60px]"
+        // breakpoints={{
+        //   640: { slidesPerView: 2 },
+        //   1250: { slidesPerView: 3 },
+        //   200: { slidesPerView: 1 },
+        // }}
       >
         {itemsCategories.map((item) => {
           const { id, title, img, link } = item;
@@ -31,7 +37,7 @@ const itemsSlider = ({ itemsType, itemsCategories }) => {
             <SwiperSlide key={id} className="">
               <Link href={link} className=" w-[262px] h-[262px]  ">
                 <img src={img} alt="" className="rounded-xl mb-[30px] " />
-                <p className="mt-[3px] flex font-bold text-[#3C4242]">
+                <p className="mt-[3px] causten-font flex font-bold text-[#3C4242]">
                   {title}
                 </p>
               </Link>
