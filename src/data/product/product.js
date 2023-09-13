@@ -140,5 +140,41 @@ export default{
           link: "#",
           gender:false
         },
+      ],
+      products: [
+        {
+          id: 1,
+          title: "Black Sweatshirt with daoskdoa",
+          brand: "Jhanvi’s  Brand" ,
+          img: "https://i.ibb.co/fF6X7yv/Rectangle-25-1.png",
+          link: "#",
+          price: 19
+        },
+        {
+          id: 2,
+          title: "line Pattern Black Hfdfkf ds",
+          brand: "AS’s  Brand" ,
+          img: "https://i.ibb.co/HrhSdvR/Rectangle-25-2.png",
+          link: "#",
+          price: 102
+
+        },
+        {
+          id: 3,
+          title: "Black Shorts",
+          brand: "MM’s  Brand" ,
+          img: "https://i.ibb.co/fDC06g5/Rectangle-25.jpg",
+          link: "#",
+          price: 44
+
+        },
+        {
+          id: 4,
+          title: "Levender Hoodie with dsakdo ksa",
+          brand: "Nike’s  Brand" ,
+          img: "https://i.ibb.co/vc5GBnh/Rectangle-25.png",
+          link: "#",
+          price: 51
+        }
       ]
 }

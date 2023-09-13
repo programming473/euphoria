@@ -9,7 +9,7 @@ import category from "@/data/product/product"
 import DiscountsTotalBlock from "@/components/discounts/DiscountsTotalBlock.jsx"
 import bannersTotalBlock from "@/data/banners/TotalBlockBanners"
 import Footer from "../components/footer/Footer.jsx";
-import categories from "../data/product/product.js"
+import GoodsList from "../components/mainPage/GoodsList.jsx";
 
 const Main = () => {
   return (
@@ -26,9 +26,9 @@ const Main = () => {
           <DiscountsTotalBlock bannersTotalBlock={bannersTotalBlock.totalBlockBanner}/>
           <ItemsList itemsCategories={category.categories.filter(item => item.gender).slice(0, 8)} />
           <ItemsList itemsCategories={category.categories.filter(item => !item.gender).slice(0, 4)}/>
+          <GoodsList products={category.products.slice(0, 4)}/>
       </div>
        <Footer/>
-      
     </div>
   );
 };
