@@ -8,15 +8,11 @@ import DiscountsItem from "@/components/discounts/DiscountsItem.jsx";
 import category from "@/data/product/product"
 import DiscountsTotalBlock from "@/components/discounts/DiscountsTotalBlock.jsx"
 import bannersTotalBlock from "@/data/banners/TotalBlockBanners"
-import Footer from "../components/footer/Footer.jsx";
 import GoodsList from "../components/mainPage/GoodsList.jsx";
 
-const Main = () => {
+const Home = () => {
   return (
     <div>
-      <div className="max-w-[1230px] m-auto">
-        <Header/>
-      </div>
       <MainSlider />
       <div className="max-w-[1230px] m-auto">
           <Discounts >
@@ -28,9 +24,8 @@ const Main = () => {
           <ItemsList itemsCategories={category.categories.filter(item => !item.gender).slice(0, 4)}/>
           <GoodsList products={category.products.slice(0, 4)}/>
       </div>
-       <Footer/>
     </div>
   );
 };
 
-export default Main;
+export default Home;

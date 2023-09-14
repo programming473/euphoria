@@ -125,7 +125,7 @@ h2::before{
 
 
            /* active link in header menu */
-.active-link {
+.main-nav-active {
   color:#3c4242; 
   font-weight: 700;
 }
@@ -133,5 +133,15 @@ h2::before{
             /* main page 50% off cards */
 .shadow-50off {
   box-shadow: 0px 0px 17px -11px rgba(0,0,0,0.7);
+}
+
+
+             /* Panel nav active styles (Header) */
+.header-panel-active .custom-icon-button {
+  background-color: #8A33FD;
+}
+
+.header-panel-active .custom-icon-button .custom-icon {
+  color: white;
 }
 
