@@ -14,7 +14,7 @@ const Footer = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="bg-[#3C4242]">
+    <div className="bg-[#3C4242] causten-font">
       <div className="py-[59px]  max-w-[1220px] m-auto">
         <div className="grid grid-cols-4 gap-4 px-[40px]">
           {footerNav.map((column, index) => (

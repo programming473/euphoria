@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ItemsList = (props) => {
   const findGender = props.itemsCategories.find(item => item.gender);
   return (
-    <div className="my-[100px]">
+    <div className="my-[100px] causten-font">
      {findGender ? <Title title="Categories For Men"/> : <Title title="Categories For Women"/>}
       <div className="flex flex-row flex-wrap gap-[50px] basis-3/12">
         {props.itemsCategories.map((item) => {
@@ -21,7 +21,7 @@ const ItemsList = (props) => {
                   <h3 className="text-[17px] text-[#2A2F2F] font-bold">
                     {item.title}
                   </h3>
-                  <p className="text-[13px] text-[#7F7F7F]">Explore Now!</p>
+                  <p className="text-[13px]  text-[#7F7F7F]">Explore Now!</p>
                 </div>
                 <div className="flex justify-center items-center">
                   <BsArrowRight className="  text-[#797979]" />
