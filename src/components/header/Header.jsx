@@ -6,14 +6,18 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <div className="w-[1230px] m-auto">
-      <div className="flex justify-between items-center p-[30px_0]">
-        <Link to="/">
-          <img src={Logo} alt="" />
-        </Link>
-        <Menu />
-        <Search />
-        <Panel />
+    <div
+      className="border-b border-gray-300 border-opacity-40"
+    >
+      <div className="w-[1230px] m-auto ">
+        <div className="flex justify-between items-center p-[30px_0]">
+          <Link to="/">
+            <img src={Logo} alt="" />
+          </Link>
+          <Menu />
+          <Search />
+          <Panel />
+        </div>
       </div>
     </div>
   );
