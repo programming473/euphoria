@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@material-tailwind/react";
 import category from "../data/product/product.js";
 import FilterAccordion from "../components/productsPage/FilterAccordion.jsx";
 import ProductCard from "../components/common/ProductCard.jsx";
+import {fetchProducts} from "../../src/utils/dataLoader"  
+import { useDispatch } from 'react-redux';
+
 const Products = () => {
-  console.log(category.products);
+
+              const [productss, setProducts] = useState([]);
+                      // console.log(productss)
+                      const dispatch = useDispatch();
+
+                useEffect(() => {
+
+                  const loadProducts = async () => {
+                    const products = await fetchProducts();
+                    
+                    dispatch(setProducts(products));
+                  }
+                  
+                  loadProducts(); 
+                }, []);
 
   return (
-    <div className=" max-w-[1230px] m-auto flex flex-row mb-[100px]">
+    <div className="max-w-[1230px] m-auto flex flex-row mb-[100px]">
       <div className="w-[350px] mr-[50px] border-t-0 border border-solid border-gray-300 border-opacity-40">
         <div className="flex justify-between items-center p-[12px_20px] text-[20px] text-[#807D7E]  border-b border-gray-300 border-opacity-40">
           <h3>Filter</h3>
