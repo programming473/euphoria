@@ -1,27 +1,24 @@
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect } from "react";
 import { Button } from "@material-tailwind/react";
-import category from "../data/product/product.js";
 import FilterAccordion from "../components/productsPage/FilterAccordion.jsx";
 import ProductCard from "../components/common/ProductCard.jsx";
-import {fetchProducts} from "../../src/utils/dataLoader"  
+// import { fetchProducts } from "../../src/utils/dataLoader";
 import { useDispatch } from 'react-redux';
+import { fetchProducts } from "../../src/redux/productsSlice.js";
+import category from "../data/product/product.js";
+
 
 const Products = () => {
+  const dispatch = useDispatch();
 
-              const [productss, setProducts] = useState([]);
-                      // console.log(productss)
-                      const dispatch = useDispatch();
-
-                useEffect(() => {
-
-                  const loadProducts = async () => {
-                    const products = await fetchProducts();
-                    
-                    dispatch(setProducts(products));
-                  }
-                  
-                  loadProducts(); 
-                }, []);
+  useEffect(() => {
+    const loadProducts = () => {
+      dispatch(fetchProducts());
+    }
+    
+    loadProducts(); 
+  }, [dispatch]);
 
   return (
     <div className="max-w-[1230px] m-auto flex flex-row mb-[100px]">
